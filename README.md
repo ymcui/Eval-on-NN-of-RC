@@ -10,7 +10,21 @@ This repository contains an empirical comparison on current neural networks on C
 
 
 ##Training Details
+Here we will have a brief comparison on the training details of each model, and hopefully you will have a better concept in parameter tuning.
 
+| System | Embed | Hidden | Grad_Clip | Opt. | Batch | Init-LR | Dropout | Others |
+| :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
+| Hermann et al., 2015 | rand | LSTM | - | RmsProp | 32 | 0.00005 | yes | - |
+| Hill et al., 2015 | rand | LSTM | 5 or 10 | SGD | ? | RANGE | yes | - |
+| Kadlec et al., 2016 | rand | GRU | 10 | ADAM | 32 | 0.001 | no | - |
+| Cui et al., 2016a | rand | GRU | 10 | ADAM | 32 | 0.0005 | yes | - |
+| Chen et al., 2016 | GloVe | LSTM | 10 | SGD | 32 | 0.1 | yes | - | 
+| Dhingra et al., 2016 | word2vec | GRU | 10 | ADAM | 32 | 0.0005 | yes | - |
+| Trischler et al., 2016 | rand | GRU | - | ADAM | 32 | 0.001 | no | - |
+| Sordoni et al., 2016 | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | - |
+| Cui et al., 2016b | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | - |
+| Weissenborn, 2016 | GloVe | GRU | - | ADAM | 32 or 128 | 0.001 | yes | - |
+| Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
 
 
 ##Overall Experimental Results
