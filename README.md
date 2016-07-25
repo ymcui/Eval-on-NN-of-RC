@@ -27,8 +27,9 @@ Here we will have a brief comparison on the training details of each model, and 
 | Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
 
 ##Training Tips
-We show several tips in training these neural network models.
-1) Use learning rate decay, even if you use adaptive learning algorithm, such as ADAM, RMSprop etc.
+We show several tips in training these neural network models, FYI.
+
+1) Use adaptive learning algorithm, if you are not expertise in optimizing vanilla SGD. Use learning rate decay, even if you use adaptive learning algorithm, such as ADAM, RMSprop etc.
 
 2) Reshuffle training data in every epoch
 
@@ -36,7 +37,10 @@ We show several tips in training these neural network models.
 
 4) Do not use big batch size. Typically, 32 is a good start.
 
-5) 
+5) `GRU` typically shares the same performance with `LSTM`
+
+6) Use gradient clipping, when using `LSTM` or `GRU`
+
 
 ##Overall Experimental Results
 We only shows results on CNN/Daily Mail and Children's book story (CBTest NE/CN).
