@@ -3,7 +3,7 @@
 **Note that, this repository will be updated irregularly**
 
 ##Introduction
-This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent personal views on these works. Feel free to discuss on related techniques. (Please go to `Issue` Tab)
+This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent personal views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
 
 ##Neural Architectures
 TBA
@@ -12,7 +12,7 @@ TBA
 ##Training Details
 Here we will have a brief comparison on the training details of each model, and hopefully you will have a better concept in parameter tuning.
 
-| System | Embed | Hidden | Grad-Clip | Opt. | Batch | Init-LR | Dropout | Others |
+| System | Embed | Hidden | Grad_Clip | Opt. | Batch | Init-LR | Dropout | Others |
 | :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
 | Hermann et al., 2015 | rand | LSTM | - | RmsProp | 32 | 0.00005 | yes | - |
 | Hill et al., 2015 | rand | LSTM | 5 or 10 | SGD | ? | RANGE | yes | - |
@@ -26,6 +26,17 @@ Here we will have a brief comparison on the training details of each model, and 
 | Weissenborn, 2016 | GloVe | GRU | - | ADAM | 32 or 128 | 0.001 | yes | - |
 | Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
 
+##Training Tips
+We show several tips in training these neural network models.
+1) Use learning rate decay, even if you use adaptive learning algorithm, such as ADAM, RMSprop etc.
+
+2) Reshuffle training data in every epoch
+
+3) Any neural network models that are based on AS Reader should pay attention to the overfitting problem. Add `dropout` or `l2_regularization`.
+
+4) Do not use big batch size. Typically, 32 is a good start.
+
+5) 
 
 ##Overall Experimental Results
 We only shows results on CNN/Daily Mail and Children's book story (CBTest NE/CN).
@@ -89,13 +100,12 @@ https://arxiv.org/abs/1606.02270
 > (Cui et al., 2016a) Consensus Attention-based Neural Networks for Chinese Reading Comprehension
 
 https://arxiv.org/abs/1607.02250
-> (Dirk Weissenborn, 2016) Separating Answers from Queries for Neural Reading Comprehension
-
-http://arxiv.org/abs/1607.03316
 > (Cui et al., 2016b) Attention-over-Attention Neural Networks for Reading Comprehension
 
 https://arxiv.org/abs/1607.04423
+> (Dirk Weissenborn, 2016) Separating Answers from Queries for Neural Reading Comprehension
 
+http://arxiv.org/abs/1607.03316
 > (Li et al., 2016) Dataset and Neural Recurrent Sequence Labeling Model for Open-Domain Factoid Question Answering
 
 https://arxiv.org/abs/1607.06275
