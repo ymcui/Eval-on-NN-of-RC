@@ -5,12 +5,33 @@
 ##Introduction
 This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent personal views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
 
+For those who are not familiar with this task, please read related papers, such as [Hermann et al., 2015](http://arxiv.org/abs/1506.03340).
+
 ##Neural Architectures
+In this section, the models will be compared with each other. As illustrated, the comment only represent my own views. 
+⭐️
+| System | Core<br/>Architecture | Prediction | Model<br/>Efficiency | Implementation<br/>Complexity | Hyper-<br/>parameter | Other<br/>tricks |
+| :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
+| Hermann et al., 2015 | 
+| Hill et al., 2015 | 
+| Kadlec et al., 2016 | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | Fast | Easy | Less | - |
+| Cui et al., 2016a | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | Fast | Easy | Less | - |
+| Chen et al., 2016 | 
+| Dhingra et al., 2016 | 
+| Trischler et al., 2016 |
+| Sordoni et al., 2016 | 
+| Cui et al., 2016b | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | Fast | Easy | Less | - |
+| Weissenborn, 2016 | 
+| Li et al., 2016 | 
+
+
+
+##The way of generating large-scale training data
 TBA
 
 
 ##Training Details
-Here we will have a brief comparison on the training details of each model, and hopefully you will have a better concept in parameter tuning.
+Here, I will have a brief comparison on the training details of each model, and hopefully you will have a better concept in parameter tuning.
 
 | System | Embed<br/>Init| Hidden<br/>Type | Gradient<br/>Clip | Optimi-<br/>zation | Batch<br/>Size | Initial<br/>LR | Dropout | Imple-<br />mentation |
 | :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
@@ -30,7 +51,7 @@ Here we will have a brief comparison on the training details of each model, and 
 TH: Theano, B: Blocks, K: Keras, L: Lasagne, TF: TensorFlow
 
 ##Training Tips
-We show several tips in training these neural network models, FYI.
+I show several tips in training these neural network models, FYI.
 
 1) Use adaptive learning algorithm, if you are not expertise in optimizing vanilla `SGD`. Use learning rate decay, even if you use adaptive learning algorithm, such as `ADAM`, `RmsProp` etc.
 
@@ -46,7 +67,7 @@ We show several tips in training these neural network models, FYI.
 
 
 ##Overall Experimental Results
-We only shows results on CNN/Daily Mail (short for CNN and DM) and Children's book story Named Entity and Common Noun (short for CBT-NE and CBT-CN).
+In this part, I only shows results on CNN/Daily Mail (short for CNN and DM) and Children's book story Named Entity and Common Noun (short for CBT-NE and CBT-CN).
 Only single model evaluation is showed here.
 For more results, such as ensemble performance, please directly refer to the related papers.
 
