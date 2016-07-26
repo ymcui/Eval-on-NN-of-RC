@@ -17,16 +17,16 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 
 | System | Core<br/>Architecture | Prediction<br/>Range<sup>1</sup> | Model<br/>Efficiency | Implementation<br/>Complexity | Hyper-<br/>parameter | Other<br/>tricks |
 | :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
-| Hermann et al., 2015 | Attention-<br/>based RNN | All words<br/>in document | ★★★ | ★★★ | ★★★★ | - |
-| Hill et al., 2015 | Memory<br/>Network | All words<br/>in document | ★★★ | ★★ | ★★★ | self-<br/>supervision
-| Kadlec et al., 2016 | Attention-<br/>based RNN | All words<br/>in document | ★★★★★ | ★★★★ | ★★★★ | - |
-| Cui et al., 2016a | Attention-<br/>based RNN | All words<br/>in document | ★★★★ | ★★★★ | ★★★★ | - |
-| Chen et al., 2016 | Attention-<br/>based RNN | Only Entities<br/>in document | ★★★ | ★★★★ | ★★★★ | - |
+| Hermann et al., 2015 | Attention-<br/>based RNN | All words in<br/> document | ★★★ | ★★★ | ★★★★ | - |
+| Hill et al., 2015 | Memory<br/>Network | All words in<br/> document | ★★★ | ★★ | ★★★ | self-<br/>supervision
+| Kadlec et al., 2016 | Attention-<br/>based RNN | All words in<br/> document | ★★★★★ | ★★★★ | ★★★★ | - |
+| Cui et al., 2016a | Attention-<br/>based RNN | All words in<br/> document | ★★★★ | ★★★★ | ★★★★ | - |
+| Chen et al., 2016 | Attention-<br/>based RNN | Only Entities in<br/> document | ★★★ | ★★★★ | ★★★★ | - |
 | Dhingra et al., 2016 | Attention-<br/>based RNN | - | ★★★ | ★★★ | ★★★ | - |
 | Trischler et al., 2016 | Attention-<br/>based RNN | - | ★★ | ★★ | ★★ | - |
-| Sordoni et al., 2016 | Attention-<br/>based RNN | All words<br/>in document | ★★★ | ★★ | ★★★ | - |
-| Cui et al., 2016b | Attention-<br/>based RNN | All words<br/>in document | ★★★★ | ★★★ | ★★★★ | - |
-| Weissenborn, 2016 | Attention-<br/>based RNN | Only Entities<br/>in document | ★★★ | ★★ | ★★★ | - | 
+| Sordoni et al., 2016 | Attention-<br/>based RNN | All words in<br/> document | ★★★ | ★★ | ★★★ | - |
+| Cui et al., 2016b | Attention-<br/>based RNN | All words in<br/> document | ★★★★ | ★★★ | ★★★★ | - |
+| Weissenborn, 2016 | Attention-<br/>based RNN | Only Entities in<br/> document | ★★★ | ★★ | ★★★ | - | 
 | Li et al., 2016 | Attention-<br/>based RNN<br/>+CRF | - | ★★★ | ★★ | ★★★ | - |
 
 > <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
