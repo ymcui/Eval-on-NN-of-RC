@@ -29,7 +29,7 @@ Here we will have a brief comparison on the training details of each model, and 
 ##Training Tips
 We show several tips in training these neural network models, FYI.
 
-1) Use adaptive learning algorithm, if you are not expertise in optimizing vanilla SGD. Use learning rate decay, even if you use adaptive learning algorithm, such as ADAM, RMSprop etc.
+1) Use adaptive learning algorithm, if you are not expertise in optimizing vanilla `SGD`. Use learning rate decay, even if you use adaptive learning algorithm, such as `ADAM`, `RmsProp` etc.
 
 2) Reshuffle training data in every epoch (general tips)
 
@@ -43,7 +43,7 @@ We show several tips in training these neural network models, FYI.
 
 
 ##Overall Experimental Results
-We only shows results on CNN/Daily Mail and Children's book story (CBTest NE/CN).
+We only shows results on CNN/Daily Mail (short for CNN and DM) and Children's book story Named Entity and Common Noun (short for CBT-NE and CBT-CN).
 Only single model evaluation is showed here.
 For more results, such as ensemble performance, please directly refer to the related papers.
 
@@ -68,28 +68,19 @@ The best result in each category is marked with bold face.
 
 >**Reference**
 Those marked by <sup>1</sup> are taken from Hermann et al., 2015;
-
 <sup>2</sup> are taken from Hill et al., 2015;
-
 <sup>3</sup> are taken from Kadlec et al., 2016;
-
 <sup>4</sup> are taken from Cui et al., 2016a;
-
 <sup>5</sup> are taken from Chen et al., 2016;
-
 <sup>6</sup> are taken from Dhingra et al., 2016;
-
 <sup>7</sup> are taken from Trischler et al., 2016;
-
 <sup>8</sup> are taken from Sordoni et al., 2016;
-
 <sup>9</sup> are taken from Cui et al., 2016b;
-
 <sup>10</sup> are taken from Weissenborn, 2016.
 
 
 ##Related Papers
-You can either download from this repository or in the following links.
+You can either download the related papers from this repository or in the following links.
 > (Hermann et al., 2015) Teaching Machines to Read and Comprehend
 
 http://arxiv.org/abs/1506.03340
