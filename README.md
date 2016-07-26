@@ -11,24 +11,25 @@ For those who are not familiar with this task, please read related papers, such 
 In this section, the models will be compared with each other. As illustrated, the comment only represent my own views. 
 > Rating will be in 1 ~ 5 stars, where 5★ means best, and 1★ means worst.<br/>
 Take Kadlec et al., 2016 as an example, <br/>
-in `model efficiency`, I give a 5★, meaning the training speed is very fast;<br/>
-in `implementation complexity`, I give a 4★, meaning it is relatively easy to implement such a neural network;<br/>
+in `Model efficiency`, I give a 5★, meaning the training speed is very fast;<br/>
+in `Implementation complexity`, I give a 4★, meaning it is relatively easy to implement such a neural network;<br/>
 in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that should be  defined by human. Note that, here the hyper-parameters are only indicating the params in neural network itself, not including such as layer dimension or something else.
 
-| System | Core<br/>Architecture | Prediction | Model<br/>Efficiency | Implementation<br/>Complexity | Hyper-<br/>parameter | Other<br/>tricks |
+| System | Core<br/>Architecture | Prediction<br/>Range<sup>1</sup> | Model<br/>Efficiency | Implementation<br/>Complexity | Hyper-<br/>parameter | Other<br/>tricks |
 | :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
-| Hermann et al., 2015 | 
-| Hill et al., 2015 | 
-| Kadlec et al., 2016 | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | ★★★★★ | ★★★★ | ★★★★ | - |
-| Cui et al., 2016a | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | ★★★★ | ★★★★ | ★★★★ | - |
-| Chen et al., 2016 | 
-| Dhingra et al., 2016 | 
-| Trischler et al., 2016 |
-| Sordoni et al., 2016 | 
-| Cui et al., 2016b | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | ★★★★ | ★★★ | ★★★★ | - |
-| Weissenborn, 2016 | 
-| Li et al., 2016 | 
+| Hermann et al., 2015 | Attention-<br/>based RNN | All words<br/>in document | ★★★ | ★★★ | ★★★★ | - |
+| Hill et al., 2015 | Memory<br/>Network | All words<br/>in document | ★★★ | ★★ | ★★★ | self-<br/>supervision
+| Kadlec et al., 2016 | Attention-<br/>based RNN | All words<br/>in document | ★★★★★ | ★★★★ | ★★★★ | - |
+| Cui et al., 2016a | Attention-<br/>based RNN | All words<br/>in document | ★★★★ | ★★★★ | ★★★★ | - |
+| Chen et al., 2016 | Attention-<br/>based RNN | Only Entities<br/>in document | ★★★ | ★★★★ | ★★★★ | - |
+| Dhingra et al., 2016 | Attention-<br/>based RNN | - | ★★★ | ★★★ | ★★★ | - |
+| Trischler et al., 2016 | Attention-<br/>based RNN | - | ★★ | ★★ | ★★ | - |
+| Sordoni et al., 2016 | Attention-<br/>based RNN | All words<br/>in document | ★★★ | ★★ | ★★★ | - |
+| Cui et al., 2016b | Attention-<br/>based RNN | All words<br/>in document | ★★★★ | ★★★ | ★★★★ | - |
+| Weissenborn, 2016 | Attention-<br/>based RNN | Only Entities<br/>in document | ★★★ | ★★ | ★★★ | - | 
+| Li et al., 2016 | Attention-<br/>based RNN<br/>+CRF | - | ★★★ | ★★ | ★★★ | - |
 
+> <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
 
 
 ##The way of generating large-scale training data
