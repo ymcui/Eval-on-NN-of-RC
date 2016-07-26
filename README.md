@@ -12,19 +12,22 @@ TBA
 ##Training Details
 Here we will have a brief comparison on the training details of each model, and hopefully you will have a better concept in parameter tuning.
 
-| System | Embed | Hidden | Grad_Clip | Opt. | Batch | Init-LR | Dropout | Others |
+| System | Embed<br/>Init| Hidden<br/>Type | Gradient<br/>Clip | Optimi-<br/>zation | Batch<br/>Size | Initial<br/>LR | Dropout | Imple-<br />mentation |
 | :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
 | Hermann et al., 2015 | rand | LSTM | - | RmsProp | 32 | 0.00005 | yes | - |
 | Hill et al., 2015 | rand | LSTM | 5 or 10 | SGD | ? | RANGE | yes | - |
-| Kadlec et al., 2016 | rand | GRU | 10 | ADAM | 32 | 0.001 | no | - |
-| Cui et al., 2016a | rand | GRU | 10 | ADAM | 32 | 0.0005 | yes | - |
+| Kadlec et al., 2016 | rand | GRU | 10 | ADAM | 32 | 0.001 | no | TH+B |
+| Cui et al., 2016a | rand | GRU | 10 | ADAM | 32 | 0.0005 | yes | TH+K |
 | Chen et al., 2016 | GloVe | LSTM | 10 | SGD | 32 | 0.1 | yes | - | 
-| Dhingra et al., 2016 | word2vec | GRU | 10 | ADAM | 32 | 0.0005 | yes | - |
-| Trischler et al., 2016 | rand | GRU | - | ADAM | 32 | 0.001 | no | - |
-| Sordoni et al., 2016 | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | - |
-| Cui et al., 2016b | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | - |
-| Weissenborn, 2016 | GloVe | GRU | - | ADAM | 32 or 128 | 0.001 | yes | - |
+| Dhingra et al., 2016 | word2vec | GRU | 10 | ADAM | 32 | 0.0005 | yes | TH+L |
+| Trischler et al., 2016 | rand | GRU | - | ADAM | 32 | 0.001 | no | TH+K |
+| Sordoni et al., 2016 | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | TH+K |
+| Cui et al., 2016b | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | TH+K |
+| Weissenborn, 2016 | GloVe | GRU | - | ADAM | 32 or 128 | 0.001 | yes | TF |
 | Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
+
+>**Abbreviation**
+TH: Theano, B: Blocks, K: Keras, L: Lasagne, TF: TensorFlow
 
 ##Training Tips
 We show several tips in training these neural network models, FYI.
@@ -67,16 +70,16 @@ The best result in each category is marked with bold face.
 | Li et al., 2016 | **77.7** | **77.1** | **78.9** | **78.0** | - | - | - | - |
 
 >**Reference**
-Those marked by <sup>1</sup> are taken from Hermann et al., 2015;
-<sup>2</sup> are taken from Hill et al., 2015;
-<sup>3</sup> are taken from Kadlec et al., 2016;
-<sup>4</sup> are taken from Cui et al., 2016a;
-<sup>5</sup> are taken from Chen et al., 2016;
-<sup>6</sup> are taken from Dhingra et al., 2016;
-<sup>7</sup> are taken from Trischler et al., 2016;
-<sup>8</sup> are taken from Sordoni et al., 2016;
-<sup>9</sup> are taken from Cui et al., 2016b;
-<sup>10</sup> are taken from Weissenborn, 2016.
+Those marked by <sup>1</sup> are taken from Hermann et al., 2015;<br/>
+<sup>2</sup> are taken from Hill et al., 2015;<br/>
+<sup>3</sup> are taken from Kadlec et al., 2016;<br/>
+<sup>4</sup> are taken from Cui et al., 2016a;<br/>
+<sup>5</sup> are taken from Chen et al., 2016;<br/>
+<sup>6</sup> are taken from Dhingra et al., 2016;<br/>
+<sup>7</sup> are taken from Trischler et al., 2016;<br/>
+<sup>8</sup> are taken from Sordoni et al., 2016;<br/>
+<sup>9</sup> are taken from Cui et al., 2016b;<br/>
+<sup>10</sup> are taken from Weissenborn, 2016.<br/>
 
 
 ##Related Papers
