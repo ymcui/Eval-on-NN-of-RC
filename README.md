@@ -9,20 +9,6 @@ For those who are not familiar with this task, please read related papers, such 
 
 ##Neural Architectures
 In this section, the models will be compared with each other. As illustrated, the comment only represent my own views. 
-⭐️
-| System | Core<br/>Architecture | Prediction | Model<br/>Efficiency | Implementation<br/>Complexity | Hyper-<br/>parameter | Other<br/>tricks |
-| :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
-| Hermann et al., 2015 | 
-| Hill et al., 2015 | 
-| Kadlec et al., 2016 | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | Fast | Easy | Less | - |
-| Cui et al., 2016a | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | Fast | Easy | Less | - |
-| Chen et al., 2016 | 
-| Dhingra et al., 2016 | 
-| Trischler et al., 2016 |
-| Sordoni et al., 2016 | 
-| Cui et al., 2016b | Attention-base<br/>RNN | Doc-level<br/>Sum Attention | Fast | Easy | Less | - |
-| Weissenborn, 2016 | 
-| Li et al., 2016 | 
 
 
 
