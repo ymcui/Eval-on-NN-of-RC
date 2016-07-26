@@ -31,23 +31,23 @@ We show several tips in training these neural network models, FYI.
 
 1) Use adaptive learning algorithm, if you are not expertise in optimizing vanilla SGD. Use learning rate decay, even if you use adaptive learning algorithm, such as ADAM, RMSprop etc.
 
-2) Reshuffle training data in every epoch
+2) Reshuffle training data in every epoch (general tips)
 
-3) Any neural network models that are based on AS Reader should pay attention to the overfitting problem. Add `dropout` or `l2_regularization`.
+3) Any neural network models that are based on AS Reader (Kadlec et al., 2016) should pay attention to the overfitting problem. Add `dropout` or `l2_regularization` to solve this problem.
 
-4) Do not use big batch size. Typically, 32 is a good start.
+4) Do not use big batch size. Typically, 32 is a good start. Note that, though bigger batch size lead to faster training, the convergence speed may not be also fast (general tips)
 
-5) `GRU` typically shares the same performance with `LSTM`
+5) `GRU` typically shares the comparable performance with `LSTM`, so feel free to use either of them.
 
-6) Use gradient clipping, when using `LSTM` or `GRU`
+6) Use gradient clipping 5~10, when using `LSTM` or `GRU`. Gradient Exploding can sometimes happen, which is more dangerous than gradient vanishing!
 
 
 ##Overall Experimental Results
 We only shows results on CNN/Daily Mail and Children's book story (CBTest NE/CN).
-And only single model evaluation is showed.
+Only single model evaluation is showed here.
 For more results, such as ensemble performance, please directly refer to the related papers.
 
-The best results are marked with bold face.
+The best result in each category is marked with bold face.
 
 | System | CNN-V | CNN-T | DM-V | DM-T | CBT-NE-V | CBT-NE-T | CBT-CN-V | CBT-CN-T |
 | :------- | :-----: | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: | 
@@ -68,15 +68,25 @@ The best results are marked with bold face.
 
 >**Reference**
 Those marked by <sup>1</sup> are taken from Hermann et al., 2015;
+
 <sup>2</sup> are taken from Hill et al., 2015;
+
 <sup>3</sup> are taken from Kadlec et al., 2016;
+
 <sup>4</sup> are taken from Cui et al., 2016a;
+
 <sup>5</sup> are taken from Chen et al., 2016;
+
 <sup>6</sup> are taken from Dhingra et al., 2016;
+
 <sup>7</sup> are taken from Trischler et al., 2016;
+
 <sup>8</sup> are taken from Sordoni et al., 2016;
+
 <sup>9</sup> are taken from Cui et al., 2016b;
+
 <sup>10</sup> are taken from Weissenborn, 2016.
+
 
 ##Related Papers
 You can either download from this repository or in the following links.
