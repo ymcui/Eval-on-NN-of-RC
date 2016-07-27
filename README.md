@@ -18,7 +18,6 @@ Several Cloze-style reading comprehension datasets are readily available. Some g
 | Children's Fairy Tale (CFT)<br/>(Cui et al., 2016a) | Chinese | story | NE, CN | story article w/<br/> a blank | the sentence that<br/>blank belongs to | test only<sup>1</sup>|
 
 > <sup>1</sup> contains one human evaluated test set
-　
 >**Abbreviation**
 NE: Named Entity, CN: Common Noun, V: Verb, P: Preposition
 
