@@ -7,6 +7,21 @@ This repository contains an empirical comparison on current neural networks on C
 
 For those who are not familiar with this task, please read related papers, such as [Hermann et al., 2015](http://arxiv.org/abs/1506.03340).
 
+##The way of generating large-scale training data
+Several Cloze-style reading comprehension datasets are readily available. Some general comparisons are given below.
+
+| Dataset | Language | Genre | Blank<br/>Type | Document | Query | Content |
+| :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
+| CNN/Daily Mail<br/>(Hermann et al., 2015) | English | news | NE | news article | summary w/<br/>a blank | train+valid<br/>+test |
+| Children's Book Test (CBTest)<br/>(Hill et al., 2015) | English | story | NE, CN,<br/> V, P | 20 consecutive<br/>sentences | 21th sentence w/<br/>a blank | train+valid<br/>+test |
+| People Daily<br/>(Cui et al., 2016a) | Chinese | news | NE, CN | news article w/<br/> a blank | the sentence that<br/>blank belongs to | train+valid<br/>+test |
+| Children's Fairy Tale (CFT)<br/>(Cui et al., 2016a) | Chinese | story | NE, CN | story article w/<br/> a blank | the sentence that<br/>blank belongs to | test only<sup>1</sup>|
+
+> <sup>1</sup> contains one human evaluated test set
+　
+>**Abbreviation**
+NE: Named Entity, CN: Common Noun, V: Verb, P: Preposition
+
 ##Neural Architectures
 In this section, the models will be compared with each other. As illustrated, the comment only represent my own views. 
 > Rating will be in 1 ~ 5 stars, where 5★ means best, and 1★ means worst.<br/>
@@ -30,23 +45,6 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 | Li et al., 2016 | Attention-<br/>based RNN<br/>+CRF | - | ★★★ | ★★ | ★★★ | - |
 
 > <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
-
-
-##The way of generating large-scale training data
-Several Cloze-style reading comprehension datasets are readily available. Some general comparisons are given below.
-
-| Dataset | Language | Genre | Blank<br/>Type | Document | Query | Content |
-| :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
-| CNN/Daily Mail<br/>(Hermann et al., 2015) | English | news | NE | news article | summary w/<br/>a blank | train+valid<br/>+test |
-| Children's Book Test (CBTest)<br/>(Hill et al., 2015) | English | story | NE, CN,<br/> V, P | 20 consecutive<br/>sentences | 21th sentence w/<br/>a blank | train+valid<br/>+test |
-| People Daily<br/>(Cui et al., 2016a) | Chinese | news | NE, CN | news article w/<br/> a blank | the sentence that<br/>blank belongs to | train+valid<br/>+test |
-| Children's Fairy Tale (CFT)<br/>(Cui et al., 2016a) | Chinese | story | NE, CN | story article w/<br/> a blank | the sentence that<br/>blank belongs to | test only<sup>1</sup>|
-
-> <sup>1</sup> contains one human evaluated test set
-
-　
->**Abbreviation**
-NE: Named Entity, CN: Common Noun, V: Verb, P: Preposition
 
 
 ##Training Details
