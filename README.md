@@ -7,7 +7,7 @@ This repository contains an empirical comparison on current neural networks on C
 
 For those who are not familiar with this task, please read related papers, such as [Hermann et al., 2015](http://arxiv.org/abs/1506.03340).
 
-##The way of generating large-scale training data
+##The Way of Generating Large-scale Training Data
 Several Cloze-style reading comprehension datasets are readily available. Some general comparisons are given below.
 
 | Dataset | Language | Genre | Blank<br/>Type | Document | Query | Content |
@@ -19,11 +19,11 @@ Several Cloze-style reading comprehension datasets are readily available. Some g
 
 > <sup>1</sup> contains one human evaluated test set
 <br/>
->**Abbreviation**
+>**Abbreviation**<br/>
 NE: Named Entity, CN: Common Noun, V: Verb, P: Preposition
 
 ##Neural Architectures
-In this section, the models will be compared with each other. As illustrated, the comment only represent my own views. 
+In this section, the models will be compared with each other. As illustrated, the comment only represents my own views. Also note that, the evaluation DO NOT take the model performance into account, and it just shows the characteristics of the model itself.
 > Rating will be in 1 ~ 5 stars, where 5★ means best, and 1★ means worst.<br/>
 Take Kadlec et al., 2016 as an example, <br/>
 in `Model efficiency`, I give a 5★, meaning the training speed is very fast;<br/>
@@ -84,13 +84,13 @@ I show several tips in training these neural network models, FYI.
 
 
 ##Overall Experimental Results
-In this part, I only shows results on CNN/Daily Mail (short for CNN and DM) and Children's book story Named Entity and Common Noun (short for CBT-NE and CBT-CN).
+In this part, I only show the results on CNN/Daily Mail and Children's book story Named Entity and Common Noun (short for CBT-NE and CBT-CN) datasets.
 Only single model evaluation is showed here.
 For more results, such as ensemble performance, please directly refer to the related papers.
 
 The best result in each category is marked with bold face.
 
-| System | CNN-V | CNN-T | DM-V | DM-T | CBT-NE-V | CBT-NE-T | CBT-CN-V | CBT-CN-T |
+| System | CNN News<br/>Valid | CNN News<br/>Test | Daily Mail<br/>Valid | Daily Mail<br/>Test | CBT-NE<br/>Valid | CBT-NE<br/>Test | CBT-CN<br/>Valid | CBT-CN<br/>Test |
 | :------- | :-----: | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: | 
 | Deep LSTM Reader<sup>1</sup> | 55.0 | 57.0 | 63.3 | 62.2 | - | - | - | - |
 | Attentive Reader<sup>1</sup> | 61.6 | 63.0 | 70.5 | 69.0 | - | - | - | - |
