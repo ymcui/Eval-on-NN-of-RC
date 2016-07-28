@@ -19,11 +19,11 @@ Several Cloze-style reading comprehension datasets are readily available. Some g
 
 > <sup>1</sup> contains one human evaluated test set
 <br/>
->**Abbreviation**<br/>
+>**Abbreviation** 
 NE: Named Entity, CN: Common Noun, V: Verb, P: Preposition
 
 ##Neural Architectures
-In this section, the models will be compared with each other. As illustrated, the comment only represents my own views. Also note that, the evaluation DO NOT take the model performance into account, and it just shows the characteristics of the model itself.
+In this section, the models will be compared with each other. As illustrated, the comment only represents my own views. Also note that, the evaluation **DO NOT** take the model performance into account, and it just shows the characteristics of the model itself.
 > Rating will be in 1 ~ 5 stars, where 5★ means best, and 1★ means worst.<br/>
 Take Kadlec et al., 2016 as an example, <br/>
 in `Model efficiency`, I give a 5★, meaning the training speed is very fast;<br/>
