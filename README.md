@@ -1,4 +1,4 @@
-# Empirical Evaluation on Current Neural Networks on Cloze-style Reading Comprehension
+# Empirical Evaluation on Current Neural Networks of Cloze-style Reading Comprehension
 
 **Note that, this repository will be updated irregularly**
 
