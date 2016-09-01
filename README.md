@@ -1,4 +1,4 @@
-# Empirical Evaluation on Current Neural Networks of Cloze-style Reading Comprehension
+# Empirical Evaluation on Current Neural Networks on Cloze-style Reading Comprehension
 
 **Note that, this repository will be updated irregularly**
 
@@ -16,8 +16,11 @@ Several Cloze-style reading comprehension datasets are readily available. Some g
 | Children's Book Test (CBTest)<br/>(Hill et al., 2015) | English | story | NE, CN,<br/> V, P | 20 consecutive<br/>sentences | 21th sentence w/<br/>a blank | train+valid<br/>+test |
 | People Daily<br/>(Cui et al., 2016a) | Chinese | news | NE, CN | news article w/<br/> a blank | the sentence that<br/>blank belongs to | train+valid<br/>+test |
 | Children's Fairy Tale (CFT)<br/>(Cui et al., 2016a) | Chinese | story | NE, CN | story article w/<br/> a blank | the sentence that<br/>blank belongs to | test only<sup>1</sup>|
+| Who did what<br/>(Onishi et al., 2016) | English | news | NE | news article | deleting an NE from the first sentence of the question article | N/A<sup>2</sup> |
+
 
 > <sup>1</sup> contains one human evaluated test set
+<sup>2</sup> as this 'dataset' is made from LDC corpus (Gigaword), it is not available to the public unless licenced by LDC
 <br/>
 >**Abbreviation** 
 NE: Named Entity, CN: Common Noun, V: Verb, P: Preposition
@@ -74,7 +77,7 @@ I show several tips in training these neural network models, FYI.
 
 2) Reshuffle training data in every epoch (general tips)
 
-3) Any neural network models that are based on AS Reader (Kadlec et al., 2016) should pay attention to the overfitting problem. Add `dropout` or `l2_regularization` to solve this problem.
+3) Any neural network models that are based on AS Reader (Kadlec et al., 2016) should pay attention to the overfitting problem. Add `dropout` or `l2_regularization` to solve this problem. Also, it should be noted that using regularization will slow down the convergence speed.
 
 4) Do not use big batch size. Typically, 32 is a good start. Note that, though bigger batch size lead to faster training, the convergence speed may not be also fast (general tips)
 
@@ -155,7 +158,9 @@ http://arxiv.org/abs/1607.03316
 > (Li et al., 2016) Dataset and Neural Recurrent Sequence Labeling Model for Open-Domain Factoid Question Answering
 
 https://arxiv.org/abs/1607.06275
+> (Onishi et al., 2016) Who did What: A Large-Scale Person-Centered Cloze Dataset
 
+http://arxiv.org/abs/1608.05457
 
 ##Contact
 For any problems, please leave a message in the `Github Issues`.
