@@ -20,6 +20,7 @@ Several Cloze-style reading comprehension datasets are readily available. Some g
 
 
 > <sup>1</sup> contains one human evaluated test set
+<br/>
 <sup>2</sup> as this 'dataset' is made from LDC corpus (Gigaword), it is not available to the public unless licenced by LDC
 <br/>
 >**Abbreviation** 
