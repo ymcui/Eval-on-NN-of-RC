@@ -17,7 +17,7 @@ Several Cloze-style reading comprehension datasets are readily available. Some g
 | People Daily<br/>(Cui et al., 2016a) | Chinese | news | NE, CN | news article w/<br/> a blank | the sentence that<br/>blank belongs to | train+valid<br/>+test |
 | Children's Fairy Tale (CFT)<br/>(Cui et al., 2016a) | Chinese | story | NE, CN | story article w/<br/> a blank | the sentence that<br/>blank belongs to | test only<sup>1</sup>|
 | Who did what<br/>(Onishi et al., 2016) | English | news | NE | news article | deleting an NE from the first sentence of the question article | N/A<sup>2</sup> |
-
+| BookTest<br/>(Bajgar et al., 2016) | English | news | NE,CN | 20 consecutive<br/>sentences | 21th sentence w/<br/>a blank | train+valid<br/>+test |
 
 > <sup>1</sup> contains one human evaluated test set
 <br/>
@@ -110,6 +110,7 @@ The best result in each category is marked with bold face.
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | **77.8** | **72.0** | **72.2** | **69.4** |
 | QANN<sup>10</sup> | - | 73.7 | - | 77.2 | - | 70.6 | - | - |
 | Li et al., 2016 | **77.7** | **77.1** | **78.9** | **78.0** | - | - | - | - |
+| AS Reader<sup>11</sup><br/>(trained on BookTest)| - | - | - | - | ***80.5*** | ***76.2*** | ***83.2*** | ***80.8*** |
 
 >**Reference**
 Those marked by <sup>1</sup> are taken from Hermann et al., 2015;<br/>
@@ -122,7 +123,7 @@ Those marked by <sup>1</sup> are taken from Hermann et al., 2015;<br/>
 <sup>8</sup> are taken from Sordoni et al., 2016;<br/>
 <sup>9</sup> are taken from Cui et al., 2016b;<br/>
 <sup>10</sup> are taken from Weissenborn, 2016.<br/>
-
+<sup>11</sup> are taken from Bajgar et al., 2016.<br/>
 
 ##Related Papers
 You can either download the related papers from this repository or in the following links.
@@ -162,6 +163,10 @@ https://arxiv.org/abs/1607.06275
 > (Onishi et al., 2016) Who did What: A Large-Scale Person-Centered Cloze Dataset
 
 http://arxiv.org/abs/1608.05457
+> (Bajgar et al., 2016) Embracing data abundance: BookTest Dataset for Reading Comprehension
+
+https://arxiv.org/abs/1610.00956
+
 
 ##Contact
 For any problems, please leave a message in the `Github Issues`.
