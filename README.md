@@ -67,6 +67,7 @@ Here, I will have a brief comparison on the training details of each model, and 
 | Cui et al., 2016b | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | TH+K |
 | Weissenborn, 2016 | GloVe | GRU | - | ADAM | 32 or 128 | 0.001 | yes | TF |
 | Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
+| Bajgar et al., 2016 | rand | GRU | 10 | ADAM | 128 | 0.0005 | no | TH+B |
 
 >**Abbreviation**
 TH: Theano, B: Blocks, K: Keras, L: Lasagne, TF: TensorFlow
