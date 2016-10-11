@@ -47,6 +47,7 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 | Cui et al., 2016b | Attention-<br/>based RNN | All words in<br/> document | ★★★★ | ★★★ | ★★★★ | - |
 | Weissenborn, 2016 | Attention-<br/>based RNN | Only Entities in<br/> document | ★★★ | ★★ | ★★★ | - | 
 | Li et al., 2016 | Attention-<br/>based RNN<br/>+CRF | - | ★★★ | ★★ | ★★★ | - |
+| Shen et al., 2016 | 
 
 > <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
 
@@ -66,6 +67,7 @@ Here, I will have a brief comparison on the training details of each model, and 
 | Sordoni et al., 2016 | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | TH+K |
 | Cui et al., 2016b | rand | GRU | 5 | ADAM | 32 | 0.001 | yes | TH+K |
 | Weissenborn, 2016 | GloVe | GRU | - | ADAM | 32 or 128 | 0.001 | yes | TF |
+| Shen et al., 2016 | GloVe | GRU | - | ADAM | 64 | 0.0005 | yes | - |
 | Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
 | Bajgar et al., 2016 | rand | GRU | 10 | ADAM | 128 | 0.0005 | no | TH+B |
 
@@ -110,8 +112,9 @@ The best result in each category is marked with bold face.
 | Iterative Attention<sup>8</sup> | 72.6 | 73.3 | - | - | 75.2 | 68.6 | 72.1 | 69.2 |
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | **77.8** | **72.0** | **72.2** | **69.4** |
 | QANN<sup>10</sup> | - | 73.7 | - | 77.2 | - | 70.6 | - | - |
+| ReasoNet<sup>11</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
 | Li et al., 2016 | **77.7** | **77.1** | **78.9** | **78.0** | - | - | - | - |
-| AS Reader<sup>11</sup><br/>(trained on BookTest)| - | - | - | - | ***80.5*** | ***76.2*** | ***83.2*** | ***80.8*** |
+| AS Reader<sup>12</sup><br/>(trained on BookTest)| - | - | - | - | ***80.5*** | ***76.2*** | ***83.2*** | ***80.8*** |
 
 >**Reference**
 Those marked by <sup>1</sup> are taken from Hermann et al., 2015;<br/>
@@ -124,50 +127,52 @@ Those marked by <sup>1</sup> are taken from Hermann et al., 2015;<br/>
 <sup>8</sup> are taken from Sordoni et al., 2016;<br/>
 <sup>9</sup> are taken from Cui et al., 2016b;<br/>
 <sup>10</sup> are taken from Weissenborn, 2016.<br/>
-<sup>11</sup> are taken from Bajgar et al., 2016.<br/>
+<sup>11</sup> are taken from Shen et al., 2016.<br/>
+<sup>12</sup> are taken from Bajgar et al., 2016.<br/>
 
 ##Related Papers
 You can either download the related papers from this repository or in the following links.
 > (Hermann et al., 2015) Teaching Machines to Read and Comprehend
 <br/>http://arxiv.org/abs/1506.03340
 
-
 > (Hill et al., 2015) The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations
+<br/>http://arxiv.org/abs/1511.02301
 
-http://arxiv.org/abs/1511.02301
 > (Kadlec et al., 2016) Text Understanding with the Attention Sum Reader Network
+<br/>http://arxiv.org/abs/1603.01547
 
-http://arxiv.org/abs/1603.01547
 > (Chen et al., 2016) A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
+<br/>https://arxiv.org/abs/1606.02858
 
-https://arxiv.org/abs/1606.02858
 > (Dhingra et al., 2016) Gated-Attention Readers for Text Comprehension
+<br/>https://arxiv.org/abs/1606.01549
 
-https://arxiv.org/abs/1606.01549
 > (Sordoni et al., 2016) Iterative Alternating Neural Attention for Machine Reading
+<br/>https://arxiv.org/abs/1606.02245
 
-https://arxiv.org/abs/1606.02245
 > (Trischler et al., 2016) Natural Language Comprehension with the EpiReader
+<br/>https://arxiv.org/abs/1606.02270
 
-https://arxiv.org/abs/1606.02270
 > (Cui et al., 2016a) Consensus Attention-based Neural Networks for Chinese Reading Comprehension
+<br/>https://arxiv.org/abs/1607.02250
 
-https://arxiv.org/abs/1607.02250
 > (Cui et al., 2016b) Attention-over-Attention Neural Networks for Reading Comprehension
+<br/>https://arxiv.org/abs/1607.04423
 
-https://arxiv.org/abs/1607.04423
 > (Dirk Weissenborn, 2016) Separating Answers from Queries for Neural Reading Comprehension
+<br/>http://arxiv.org/abs/1607.03316
 
-http://arxiv.org/abs/1607.03316
 > (Li et al., 2016) Dataset and Neural Recurrent Sequence Labeling Model for Open-Domain Factoid Question Answering
+<br/>https://arxiv.org/abs/1607.06275
 
-https://arxiv.org/abs/1607.06275
 > (Onishi et al., 2016) Who did What: A Large-Scale Person-Centered Cloze Dataset
+<br/>http://arxiv.org/abs/1608.05457
 
-http://arxiv.org/abs/1608.05457
+> (Shen et al., 2016) ReasoNet: Learning to Stop Reading in Machine Comprehension
+<br/>https://arxiv.org/abs/1609.05284
+
 > (Bajgar et al., 2016) Embracing data abundance: BookTest Dataset for Reading Comprehension
-
-https://arxiv.org/abs/1610.00956
+<br/>https://arxiv.org/abs/1610.00956
 
 
 ##Contact
