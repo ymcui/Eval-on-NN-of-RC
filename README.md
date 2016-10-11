@@ -129,8 +129,9 @@ Those marked by <sup>1</sup> are taken from Hermann et al., 2015;<br/>
 ##Related Papers
 You can either download the related papers from this repository or in the following links.
 > (Hermann et al., 2015) Teaching Machines to Read and Comprehend
-
 http://arxiv.org/abs/1506.03340
+
+
 > (Hill et al., 2015) The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations
 
 http://arxiv.org/abs/1511.02301
