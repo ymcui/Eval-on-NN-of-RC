@@ -116,9 +116,8 @@ The best result in each category is marked with bold face.
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | QANN<sup>10</sup> | - | 73.7 | - | 77.2 | - | 70.6 | - | - |
 | ReasoNet<sup>13</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
-| Li et al., 2016 | - | - | 78.9 | 78.0 | - | - | - | - |
 | NSE Adp. Com. <sup>15</sup> | - | - | - | - | 78.2 | 73.2 | 74.2 | 71.4 |
-| bi-ATT flow <sup>16</sup> | 76.3 | 76.9 | **80.3** | **79.6** | - | - | - | - | 
+| bi-ATT flow <sup>16</sup> | **76.3** | **76.9** | **80.3** | **79.6** | - | - | - | - | 
 | FG gate <sup>17</sup> | - | - | - | - | **79.1** | **75.0** | **75.3** | **72.0** |
 | AS Reader<sup>14</sup><br/>(trained on BookTest)| - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
 
