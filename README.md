@@ -108,19 +108,19 @@ The best result in each category is marked with bold face.
 | Human (ctx+query)<sup>2</sup> | - | - | - | - | - | *81.6* | - | *81.6* |
 | MemNN(+self-sup)<sup>2</sup> | 63.4 | 66.8 | - | - | 70.4 | 66.6 | 64.2 | 63.0 |
 | AS Reader<sup>3</sup> | 68.6 | 69.5 | 75.0 | 73.9 | 73.8 | 68.6 | 68.8 | 63.4 |
-| CAS Reader<sup>4</sup> | 68.2 | 70.0 | - | - | 74.2 | 69.2 | 68.2 | 65.7 |
-| Stanford AR<sup>5</sup> | 72.4 | 72.4 | 76.9 | 75.8 | - | - | - | - |
-| GA Reader<sup>6</sup> | 73.0 | 73.8 | 76.7 | 75.7 | 74.9 | 69.0 | 69.0 | 63.9 |
+| CAS Reader<sup>8</sup> | 68.2 | 70.0 | - | - | 74.2 | 69.2 | 68.2 | 65.7 |
+| Stanford AR<sup>4</sup> | 72.4 | 72.4 | 76.9 | 75.8 | - | - | - | - |
+| GA Reader<sup>5</sup> | 73.0 | 73.8 | 76.7 | 75.7 | 74.9 | 69.0 | 69.0 | 63.9 |
 | EpiReader<sup>7</sup> | 73.4 | 74.0 | - | - | 75.3 | 69.7 | 71.5 | 67.4 |
-| Iterative Attention<sup>8</sup> | 72.6 | 73.3 | - | - | 75.2 | 68.6 | 72.1 | 69.2 |
+| Iterative Attention<sup>6</sup> | 72.6 | 73.3 | - | - | 75.2 | 68.6 | 72.1 | 69.2 |
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | QANN<sup>10</sup> | - | 73.7 | - | 77.2 | - | 70.6 | - | - |
-| ReasoNet<sup>11</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
+| ReasoNet<sup>13</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
 | Li et al., 2016 | - | - | 78.9 | 78.0 | - | - | - | - |
 | NSE Adp. Com. <sup>15</sup> | - | - | - | - | 78.2 | 73.2 | 74.2 | 71.4 |
 | bi-ATT flow <sup>16</sup> | 76.3 | 76.9 | **80.3** | **79.6** | - | - | - | - | 
 | FG gate <sup>17</sup> | - | - | - | - | **79.1** | **75.0** | **75.3** | **72.0** |
-| AS Reader<sup>12</sup><br/>(trained on BookTest)| - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
+| AS Reader<sup>14</sup><br/>(trained on BookTest)| - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
 
 
 ##Related Papers
