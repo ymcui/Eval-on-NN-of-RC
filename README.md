@@ -48,6 +48,8 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 | Weissenborn, 2016 | Attention-<br/>based RNN | Only Entities in<br/> document | ★★★ | ★★ | ★★★ | - | 
 | Li et al., 2016 | Attention-<br/>based RNN<br/>+CRF | - | ★★★ | ★★ | ★★★ | - |
 | Shen et al., 2016 | 
+| Munkhdalai and Yu, 2016 | 
+
 
 > <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
 
@@ -70,6 +72,7 @@ Here, I will have a brief comparison on the training details of each model, and 
 | Shen et al., 2016 | GloVe | GRU | - | ADAM | 64 | 0.0005 | yes | - |
 | Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
 | Bajgar et al., 2016 | rand | GRU | 10 | ADAM | 128 | 0.0005 | no | TH+B |
+| Munkhdalai and Yu, 2016 | GloVe | LSTM | 15 | ADAM | 32 | 0.001 | yes | - | 
 
 >**Abbreviation**
 TH: Theano, B: Blocks, K: Keras, L: Lasagne, TF: TensorFlow
@@ -90,7 +93,7 @@ I show several tips in training these neural network models, FYI.
 6) Use gradient clipping 5~10, when using `LSTM` or `GRU`. Gradient Exploding can sometimes happen, which is more dangerous than gradient vanishing!
 
 
-##Overall Experimental Results
+##Leaderboard
 In this part, I only show the results on CNN/Daily Mail and Children's book story Named Entity and Common Noun (short for CBT-NE and CBT-CN) datasets.
 Only single model evaluation is showed here.
 For more results, such as ensemble performance, please directly refer to the related papers.
@@ -110,69 +113,68 @@ The best result in each category is marked with bold face.
 | GA Reader<sup>6</sup> | 73.0 | 73.8 | 76.7 | 75.7 | 74.9 | 69.0 | 69.0 | 63.9 |
 | EpiReader<sup>7</sup> | 73.4 | 74.0 | - | - | 75.3 | 69.7 | 71.5 | 67.4 |
 | Iterative Attention<sup>8</sup> | 72.6 | 73.3 | - | - | 75.2 | 68.6 | 72.1 | 69.2 |
-| AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | **77.8** | **72.0** | **72.2** | **69.4** |
+| AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | QANN<sup>10</sup> | - | 73.7 | - | 77.2 | - | 70.6 | - | - |
 | ReasoNet<sup>11</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
-| Li et al., 2016 | **77.7** | **77.1** | **78.9** | **78.0** | - | - | - | - |
-| AS Reader<sup>12</sup><br/>(trained on BookTest)| - | - | - | - | ***80.5*** | ***76.2*** | ***83.2*** | ***80.8*** |
+| Li et al., 2016 | - | - | 78.9 | 78.0 | - | - | - | - |
+| NSE Adp. Com. <sup>15</sup> | - | - | - | - | 78.2 | 73.2 | 74.2 | 71.4 |
+| bi-ATT flow <sup>16</sup> | 76.3 | 76.9 | **80.3** | **79.6** | - | - | - | - | 
+| FG gate <sup>17</sup> | - | - | - | - | **79.1** | **75.0** | **75.3** | **72.0** |
+| AS Reader<sup>12</sup><br/>(trained on BookTest)| - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
 
->**Reference**
-Those marked by <sup>1</sup> are taken from Hermann et al., 2015;<br/>
-<sup>2</sup> are taken from Hill et al., 2015;<br/>
-<sup>3</sup> are taken from Kadlec et al., 2016;<br/>
-<sup>4</sup> are taken from Cui et al., 2016a;<br/>
-<sup>5</sup> are taken from Chen et al., 2016;<br/>
-<sup>6</sup> are taken from Dhingra et al., 2016;<br/>
-<sup>7</sup> are taken from Trischler et al., 2016;<br/>
-<sup>8</sup> are taken from Sordoni et al., 2016;<br/>
-<sup>9</sup> are taken from Cui et al., 2016b;<br/>
-<sup>10</sup> are taken from Weissenborn, 2016.<br/>
-<sup>11</sup> are taken from Shen et al., 2016.<br/>
-<sup>12</sup> are taken from Bajgar et al., 2016.<br/>
 
 ##Related Papers
 You can either download the related papers from this repository or in the following links.
-> (Hermann et al., 2015) Teaching Machines to Read and Comprehend
+> 1. (Hermann et al., 2015) Teaching Machines to Read and Comprehend
 <br/>http://arxiv.org/abs/1506.03340
 
-> (Hill et al., 2015) The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations
+> 2. (Hill et al., 2015) The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations
 <br/>http://arxiv.org/abs/1511.02301
 
-> (Kadlec et al., 2016) Text Understanding with the Attention Sum Reader Network
+> 3. (Kadlec et al., 2016) Text Understanding with the Attention Sum Reader Network
 <br/>http://arxiv.org/abs/1603.01547
 
-> (Chen et al., 2016) A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
+> 4. (Chen et al., 2016) A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task
 <br/>https://arxiv.org/abs/1606.02858
 
-> (Dhingra et al., 2016) Gated-Attention Readers for Text Comprehension
+> 5. (Dhingra et al., 2016) Gated-Attention Readers for Text Comprehension
 <br/>https://arxiv.org/abs/1606.01549
 
-> (Sordoni et al., 2016) Iterative Alternating Neural Attention for Machine Reading
+> 6. (Sordoni et al., 2016) Iterative Alternating Neural Attention for Machine Reading
 <br/>https://arxiv.org/abs/1606.02245
 
-> (Trischler et al., 2016) Natural Language Comprehension with the EpiReader
+> 7. (Trischler et al., 2016) Natural Language Comprehension with the EpiReader
 <br/>https://arxiv.org/abs/1606.02270
 
-> (Cui et al., 2016a) Consensus Attention-based Neural Networks for Chinese Reading Comprehension
+> 8. (Cui et al., 2016a) Consensus Attention-based Neural Networks for Chinese Reading Comprehension
 <br/>https://arxiv.org/abs/1607.02250
 
-> (Cui et al., 2016b) Attention-over-Attention Neural Networks for Reading Comprehension
+> 9. (Cui et al., 2016b) Attention-over-Attention Neural Networks for Reading Comprehension
 <br/>https://arxiv.org/abs/1607.04423
 
-> (Dirk Weissenborn, 2016) Separating Answers from Queries for Neural Reading Comprehension
+> 10. (Dirk Weissenborn, 2016) Separating Answers from Queries for Neural Reading Comprehension
 <br/>http://arxiv.org/abs/1607.03316
 
-> (Li et al., 2016) Dataset and Neural Recurrent Sequence Labeling Model for Open-Domain Factoid Question Answering
+> 11. (Li et al., 2016) Dataset and Neural Recurrent Sequence Labeling Model for Open-Domain Factoid Question Answering
 <br/>https://arxiv.org/abs/1607.06275
 
-> (Onishi et al., 2016) Who did What: A Large-Scale Person-Centered Cloze Dataset
+> 12. (Onishi et al., 2016) Who did What: A Large-Scale Person-Centered Cloze Dataset
 <br/>http://arxiv.org/abs/1608.05457
 
-> (Shen et al., 2016) ReasoNet: Learning to Stop Reading in Machine Comprehension
+> 13. (Shen et al., 2016) ReasoNet: Learning to Stop Reading in Machine Comprehension
 <br/>https://arxiv.org/abs/1609.05284
 
-> (Bajgar et al., 2016) Embracing data abundance: BookTest Dataset for Reading Comprehension
+> 14. (Bajgar et al., 2016) Embracing data abundance: BookTest Dataset for Reading Comprehension
 <br/>https://arxiv.org/abs/1610.00956
+
+> 15. (Munkhdalai and Yu, 2016) Reasoning with Memory Augmented Neural Networks for Language Comprehension
+<br/>https://arxiv.org/abs/1610.06454
+
+> 16. (Seo et al., 2016) Bi-directional attention flow for machine comprehension
+<br/>http://arxiv.org/abs/1611.01603
+
+> 17. (Yang et al., 2016) Words or Characters? Fine-grained Gating for Reading Comprehension
+<br/>http://arxiv.org/abs/1611.01724
 
 
 ##Contact
