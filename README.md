@@ -2,6 +2,10 @@
 
 **Note that, this repository will be updated irregularly.**
 
+##Statement
+**An ``interesting'' repo: (https://github.com/tifoit/mrc-hia) copied most of the content in this repo without citing the original author.**
+
+
 ##Introduction
 This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent PERSONAL views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
 
