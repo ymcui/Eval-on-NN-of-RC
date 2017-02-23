@@ -3,7 +3,7 @@
 **Note that, this repository will be updated irregularly**
 
 ##Introduction
-This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent personal views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
+This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent PERSONAL views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
 
 For those who are not familiar with this task, please read related papers, such as [Hermann et al., 2015](http://arxiv.org/abs/1506.03340).
 
@@ -113,12 +113,13 @@ The best result in each category is marked with bold face.
 | GA Reader<sup>5</sup> | 73.0 | 73.8 | 76.7 | 75.7 | 74.9 | 69.0 | 69.0 | 63.9 |
 | EpiReader<sup>7</sup> | 73.4 | 74.0 | - | - | 75.3 | 69.7 | 71.5 | 67.4 |
 | Iterative Attention<sup>6</sup> | 72.6 | 73.3 | - | - | 75.2 | 68.6 | 72.1 | 69.2 |
-| AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | QANN<sup>10</sup> | - | 73.7 | - | 77.2 | - | 70.6 | - | - |
 | ReasoNet<sup>13</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
 | NSE Adp. Com. <sup>15</sup> | - | - | - | - | 78.2 | 73.2 | 74.2 | 71.4 |
-| bi-ATT flow <sup>16</sup> | **76.3** | **76.9** | **80.3** | **79.6** | - | - | - | - | 
-| FG gate <sup>17</sup> | - | - | - | - | **79.1** | **75.0** | **75.3** | **72.0** |
+| Bi-ATT Flow<sup>16</sup> | **76.3** | **76.9** | **80.3** | **79.6** | - | - | - | - | 
+| FG gate<sup>17</sup> | - | - | - | - | 79.1 | **75.0** | 75.3 | 72.0 |
+| AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
+| AoA Reader + rerank<sup>9</sup> | - | - | - | - | **79.6** | 74.0 | **75.7** | **73.1** |
 | AS Reader<sup>14</sup><br/>(trained on BookTest)| - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
 
 
@@ -178,3 +179,7 @@ You can either download the related papers from this repository or in the follow
 
 ##Contact
 For any problems, please leave a message in the `Github Issues`.
+
+
+##Disclaimer
+Any subjective comments in this repository only represents the idea of the owner (ymcui), and does not represent claims of any organizations.
