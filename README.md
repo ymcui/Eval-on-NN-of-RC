@@ -3,9 +3,7 @@
 **Note that, this repository will be updated irregularly.**
 
 ##Statement
-If you find this repository helpful, please press the star button.
-Moreover, if you would like to using the content in this repository, please indicate the orignal author and source link.
-**An ``interesting'' repo: (https://github.com/tifoit/mrc-hia) copied most of the content in this repo without citing the original author.**
+**If you find this repository helpful, please press the star button. Moreover, if you would like to use or repost the content in this repository, please indicate the orignal author and source link.**
 
 
 ##Introduction
