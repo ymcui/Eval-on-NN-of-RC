@@ -1,6 +1,6 @@
 # Empirical Evaluation on Current Neural Networks on Cloze-style Reading Comprehension
 
-**Note that, this repository will be updated irregularly**
+**Note that, this repository will be updated irregularly.**
 
 ##Introduction
 This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent PERSONAL views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
@@ -182,4 +182,4 @@ For any problems, please leave a message in the `Github Issues`.
 
 
 ##Disclaimer
-Any subjective comments in this repository only represents the idea of the owner (ymcui), and does not represent claims of any organizations.
+Any subjective comments in this repository only represents the idea of the owner (ymcui), and does not represent the claims of any organizations.
