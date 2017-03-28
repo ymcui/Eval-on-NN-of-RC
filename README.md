@@ -14,15 +14,9 @@ For those who are not familiar with this task, please read related papers, such 
 ## The Way of Generating Large-scale Training Data
 Several Cloze-style reading comprehension datasets are readily available. Some general comparisons are given below.
 
-
 | Dataset | Language | Genre | Blank<br/>Type | Document | Query | Content |
 | :------- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | CNN/Daily Mail<br/>(Hermann et al., 2015) | English | news | NE | news article | summary w/<br/>a blank | train+valid<br/>+test |
-| Children's Book Test (CBTest)<br/>(Hill et al., 2015) | English | story | NE, CN,<br/> V, P | 20 consecutive<br/>sentences | 21th sentence w/<br/>a blank | train+valid<br/>+test |
-| People Daily<br/>(Cui et al., 2016a) | Chinese | news | NE, CN | news article w/<br/> a blank | the sentence that<br/>blank belongs to | train+valid<br/>+test |
-| Children's Fairy Tale (CFT)<br/>(Cui et al., 2016a) | Chinese | story | NE, CN | story article w/<br/> a blank | the sentence that<br/>blank belongs to | test only<sup>1</sup>|
-| Who did what<br/>(Onishi et al., 2016) | English | news | NE | news article | deleting an NE from the first sentence of the question article | N/A<sup>2</sup> |
-| BookTest<br/>(Bajgar et al., 2016) | English | news | NE,CN | 20 consecutive<br/>sentences | 21th sentence w/<br/>a blank | train+valid<br/>+test |
 
 > <sup>1</sup> contains one human evaluated test set
 <br/>
