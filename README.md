@@ -15,7 +15,7 @@ For those who are not familiar with this task, please read related papers, such 
 Several Cloze-style reading comprehension datasets are readily available. Some general comparisons are given below.
 
 | Dataset | Language | Genre | Blank<br />Type | Document | Query | Content |
-| :------: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
+| :------: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | CNN/Daily Mail<br/>(Hermann et al., 2015) | English | news | NE | news article | summary w/<br/>a blank | train+valid<br/>+test |
 | Children's Book Test (CBTest)<br/>(Hill et al., 2015) | English | story | NE, CN,<br/> V, P | 20 consecutive<br/>sentences | 21th sentence w/<br/>a blank | train+valid<br/>+test |
 | People Daily<br/>(Cui et al., 2016a) | Chinese | news | NE, CN | news article w/<br/> a blank | the sentence that<br/>blank belongs to | train+valid<br/>+test |
@@ -40,7 +40,7 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 
 
 | System | Core<br/>Architecture | Prediction<br/>Range<sup>1</sup> | Model<br/>Efficiency | Implementation<br/>Complexity | Hyper-<br/>parameter | Other<br/>tricks |
-| :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
+| :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
 | Hermann et al., 2015 | Attention-<br/>based RNN | All words in<br/> document | ★★★ | ★★★ | ★★★★ | - |
 | Hill et al., 2015 | Memory<br/>Network | All words in<br/> document | ★★★ | ★★ | ★★★ | self-<br/>supervision
 | Kadlec et al., 2016 | Attention-<br/>based RNN | All words in<br/> document | ★★★★★ | ★★★★ | ★★★★ | - |
