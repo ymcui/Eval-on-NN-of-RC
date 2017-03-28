@@ -2,16 +2,16 @@
 
 **Note that, this repository will be updated irregularly.**
 
-##Statement
+## Statement
 **If you find this repository helpful, please press the star button. Moreover, if you would like to use or repost the content in this repository, please indicate the orignal author and source link.**
 
 
-##Introduction
+## Introduction
 This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent PERSONAL views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
 
 For those who are not familiar with this task, please read related papers, such as [Hermann et al., 2015](http://arxiv.org/abs/1506.03340).
 
-##The Way of Generating Large-scale Training Data
+## The Way of Generating Large-scale Training Data
 Several Cloze-style reading comprehension datasets are readily available. Some general comparisons are given below.
 
 | Dataset | Language | Genre | Blank<br/>Type | Document | Query | Content |
@@ -30,7 +30,7 @@ Several Cloze-style reading comprehension datasets are readily available. Some g
 >**Abbreviation** 
 NE: Named Entity, CN: Common Noun, V: Verb, P: Preposition
 
-##Neural Architectures
+## Neural Architectures
 In this section, the models will be compared with each other. As illustrated, the comment only represents my own views. Also note that, the evaluation **DO NOT** take the model performance into account, and it just shows the characteristics of the model itself.
 > Rating will be in 1 ~ 5 stars, where 5★ means best, and 1★ means worst.<br/>
 Take Kadlec et al., 2016 as an example, <br/>
@@ -58,7 +58,7 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 > <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
 
 
-##Training Details
+## Training Details
 Here, I will have a brief comparison on the training details of each model, and hopefully you will have a better concept in parameter tuning.
 
 | System | Embed<br/>Init| Hidden<br/>Type | Gradient<br/>Clip | Optimi-<br/>zation | Batch<br/>Size | Initial<br/>LR | Dropout | Imple-<br />mentation |
@@ -81,7 +81,7 @@ Here, I will have a brief comparison on the training details of each model, and 
 >**Abbreviation**
 TH: Theano, B: Blocks, K: Keras, L: Lasagne, TF: TensorFlow
 
-##Training Tips
+## Training Tips
 I show several tips in training these neural network models, FYI.
 
 1) Use adaptive learning algorithm, if you are not expertise in optimizing vanilla `SGD`. Use learning rate decay, even if you use adaptive learning algorithm, such as `ADAM`, `RmsProp` etc.
@@ -97,7 +97,7 @@ I show several tips in training these neural network models, FYI.
 6) Use gradient clipping 5~10, when using `LSTM` or `GRU`. Gradient Exploding can sometimes happen, which is more dangerous than gradient vanishing!
 
 
-##Leaderboard
+## Leaderboard
 In this part, I only show the results on CNN/Daily Mail and Children's book story Named Entity and Common Noun (short for CBT-NE and CBT-CN) datasets.
 Only single model evaluation is showed here.
 For more results, such as ensemble performance, please directly refer to the related papers.
@@ -127,7 +127,7 @@ The best result in each category is marked with bold face.
 | AS Reader<sup>14</sup><br/>(trained on BookTest)| - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
 
 
-##Related Papers
+## Related Papers
 You can either download the related papers from this repository or in the following links.
 > 1. (Hermann et al., 2015) Teaching Machines to Read and Comprehend
 <br/>http://arxiv.org/abs/1506.03340
@@ -181,9 +181,9 @@ You can either download the related papers from this repository or in the follow
 <br/>http://arxiv.org/abs/1611.01724
 
 
-##Contact
+## Contact
 For any problems, please leave a message in the `Github Issues`.
 
 
-##Disclaimer
+## Disclaimer
 Any subjective comments in this repository only represents the idea of the owner (ymcui), and does not represent the claims of any organizations.
