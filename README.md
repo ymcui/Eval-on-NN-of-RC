@@ -14,6 +14,7 @@ For those who are not familiar with this task, please read related papers, such 
 ## The Way of Generating Large-scale Training Data
 Several Cloze-style reading comprehension datasets are readily available. Some general comparisons are given below.
 
+
 | Dataset | Language | Genre | Blank<br/>Type | Document | Query | Content |
 | :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
 | CNN/Daily Mail<br/>(Hermann et al., 2015) | English | news | NE | news article | summary w/<br/>a blank | train+valid<br/>+test |
@@ -37,6 +38,7 @@ Take Kadlec et al., 2016 as an example, <br/>
 in `Model efficiency`, I give a 5★, meaning the training speed is very fast;<br/>
 in `Implementation complexity`, I give a 4★, meaning it is relatively easy to implement such a neural network;<br/>
 in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that should be  defined by human. Note that, here the hyper-parameters are only indicating the params in neural network itself, not including such as layer dimension or something else.
+
 
 | System | Core<br/>Architecture | Prediction<br/>Range<sup>1</sup> | Model<br/>Efficiency | Implementation<br/>Complexity | Hyper-<br/>parameter | Other<br/>tricks |
 | :------- | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |
