@@ -122,12 +122,16 @@ The best result in each category is marked with bold face.
 | ReasoNet<sup>13</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
 | NSE Adp. Com. <sup>15</sup> | - | - | - | - | 78.2 | 73.2 | 74.2 | 71.4 |
 | Bi-ATT Flow<sup>16</sup> | **76.3** | **76.9** | **80.3** | **79.6** | - | - | - | - | 
-| FG gate<sup>17</sup> | - | - | - | - | 79.1 | 75.0** | 75.3 | 72.0 |
+| FG gate<sup>17</sup> | - | - | - | - | 79.1 | 75.0 | 75.3 | 72.0 |
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | AoA Reader + rerank<sup>9</sup> | - | - | - | - | 79.6 | 74.0 | 75.7 | 73.1 |
 | AoA Reader<sup>+</sup> | - | - | - | - | **79.5** | **75.4** | **74.4** | **71.3** |
 | AoA Reader<sup>+</sup> + rerank | - | - | - | - | **80.6** | **76.1** | **76.6** | **74.5** |
-| AS Reader<sup>14</sup><br/>(trained on BookTest)| - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
+
+The following results are trained on BookTest dataset, which is substantially bigger than CBT.
+| System | CNN News<br/>Valid | CNN News<br/>Test | Daily Mail<br/>Valid | Daily Mail<br/>Test | CBT-NE<br/>Valid | CBT-NE<br/>Test | CBT-CN<br/>Valid | CBT-CN<br/>Test |
+| :------- | :-----: | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: | 
+| AS Reader<sup>14</sup><br/> | - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
 
 
 ## Related Papers
