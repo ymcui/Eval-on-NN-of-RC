@@ -125,7 +125,7 @@ The best result in each category is marked with bold face.
 | FG gate<sup>17</sup> | - | - | - | - | 79.1 | 75.0 | 75.3 | 72.0 |
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | AoA Reader + rerank<sup>9</sup> | - | - | - | - | 79.6 | 74.0 | 75.7 | 73.1 |
-| AoA Reader<sup>+</sup> | - | - | - | - | **79.5** | **75.4** | **74.4** | **71.3** |
+| AoA Reader<sup>+</sup> | - | - | - | - | 79.5 | 75.4 | 74.4 | 71.3 |
 | AoA Reader<sup>+</sup> + rerank | - | - | - | - | **80.6** | **76.1** | **76.6** | **74.5** |
 
 The following results are trained on BookTest dataset, which is substantially bigger than CBT.
