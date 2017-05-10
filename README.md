@@ -129,6 +129,7 @@ The best result in each category is marked with bold face.
 | AoA Reader<sup>+</sup> + rerank | - | - | - | - | **80.6** | **76.1** | **76.6** | **74.5** |
 
 The following results are trained on BookTest dataset, which is substantially bigger than CBT.
+
 | System | CNN News<br/>Valid | CNN News<br/>Test | Daily Mail<br/>Valid | Daily Mail<br/>Test | CBT-NE<br/>Valid | CBT-NE<br/>Test | CBT-CN<br/>Valid | CBT-CN<br/>Test |
 | :------- | :-----: | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: | 
 | AS Reader<sup>14</sup><br/> | - | - | - | - | *80.5* | *76.2* | *83.2* | *80.8* |
