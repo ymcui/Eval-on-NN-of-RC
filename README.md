@@ -54,6 +54,7 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 | Li et al., 2016 | Attention-<br/>based RNN<br/>+CRF | - | ★★★ | ★★ | ★★★ | - |
 | Shen et al., 2016 | 
 | Munkhdalai and Yu, 2016 | 
+| Mihaylov and Frank, 2018 |
 
 
 > <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
@@ -78,6 +79,7 @@ Here, I will have a brief comparison on the training details of each model, and 
 | Li et al., 2016 | NNLM | LSTM | - | RmsProp | 120 | - | - | - |
 | Bajgar et al., 2016 | rand | GRU | 10 | ADAM | 128 | 0.0005 | no | TH+B |
 | Munkhdalai and Yu, 2016 | GloVe | LSTM | 15 | ADAM | 32 | 0.001 | yes | - | 
+| Mihaylov and Frank, 2018 | GloVe | GRU | ? | ? | 64 | 0.001 | ? | - |
 
 >**Abbreviation**
 TH: Theano, B: Blocks, K: Keras, L: Lasagne, TF: TensorFlow
@@ -121,12 +123,11 @@ The best result in each category is marked with bold face.
 | QANN<sup>10</sup> | - | 73.7 | - | 77.2 | - | 70.6 | - | - |
 | ReasoNet<sup>13</sup> | 72.9 | 74.7 | 77.6 | 76.6 | - | - | - | - |
 | NSE Adp. Com. <sup>15</sup> | - | - | - | - | 78.2 | 73.2 | 74.2 | 71.4 |
-| Bi-ATT Flow<sup>16</sup> | **76.3** | **76.9** | **80.3** | **79.6** | - | - | - | - | 
+| Bi-ATT Flow<sup>16</sup> | 76.3 | 76.9 | 80.3 | 79.6 | - | - | - | - | 
 | FG gate<sup>17</sup> | - | - | - | - | 79.1 | 75.0 | 75.3 | 72.0 |
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | AoA Reader + rerank<sup>9</sup> | - | - | - | - | 79.6 | 74.0 | 75.7 | 73.1 |
-| AoA Reader<sup>+</sup> | - | - | - | - | 79.5 | 75.4 | 74.4 | 71.3 |
-| AoA Reader<sup>+</sup> + rerank | - | - | - | - | **80.6** | **76.1** | **76.6** | **74.5** |
+| KnReader<sup>18</sup> | - | - | - | - | 77.4 | 71.4 | 71.8 | 67.6 |
 
 The following results are trained on BookTest dataset, which is substantially bigger than CBT.
 
@@ -188,6 +189,8 @@ You can either download the related papers from this repository or in the follow
 > 17. (Yang et al., 2016) Words or Characters? Fine-grained Gating for Reading Comprehension
 <br/>http://arxiv.org/abs/1611.01724
 
+> 18. (Mihaylov and Frank, 2018) Knowledgeable Reader: Enhancing Cloze-Style Reading Comprehension with External Commonsense Knowledge
+<br/>http://arxiv.org/abs/1805.07858
 
 ## Contact
 For any problems, please leave a message in the `Github Issues`.
