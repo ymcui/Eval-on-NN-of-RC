@@ -55,6 +55,7 @@ in `Hyper-parameter`, I give a 4★, meaning there are fewer hyper-params that s
 | Shen et al., 2016 | 
 | Munkhdalai and Yu, 2016 | 
 | Mihaylov and Frank, 2018 |
+| Ghaeini et al., 2018 | 
 
 
 > <sup>1</sup> only shows the CNN/Daily Mail condition. In CBTest condition, all models only considers 10 candidates given in the datasets.
@@ -80,6 +81,8 @@ Here, I will have a brief comparison on the training details of each model, and 
 | Bajgar et al., 2016 | rand | GRU | 10 | ADAM | 128 | 0.0005 | no | TH+B |
 | Munkhdalai and Yu, 2016 | GloVe | LSTM | 15 | ADAM | 32 | 0.001 | yes | - | 
 | Mihaylov and Frank, 2018 | GloVe | GRU | ? | ? | 64 | 0.001 | ? | - |
+| Ghaeini et al., 2018 | GloVe | GRU | ? | ADAM | 32 | 0.0005 | 0.4 | - |  
+
 
 >**Abbreviation**
 TH: Theano, B: Blocks, K: Keras, L: Lasagne, TF: TensorFlow
@@ -128,6 +131,8 @@ The best result in each category is marked with bold face.
 | AoA Reader<sup>9</sup> | 73.1 | 74.4 | - | - | 77.8 | 72.0 | 72.2 | 69.4 |
 | AoA Reader + rerank<sup>9</sup> | - | - | - | - | 79.6 | 74.0 | 75.7 | 73.1 |
 | KnReader<sup>18</sup> | - | - | - | - | 77.4 | 71.4 | 71.8 | 67.6 |
+| DGR<sup>19</sup> | - | - | - | - | - | 75.4 | - | 70.7 |
+
 
 The following results are trained on BookTest dataset, which is substantially bigger than CBT.
 
@@ -191,6 +196,9 @@ You can either download the related papers from this repository or in the follow
 
 > 18. (Mihaylov and Frank, 2018) Knowledgeable Reader: Enhancing Cloze-Style Reading Comprehension with External Commonsense Knowledge
 <br/>http://arxiv.org/abs/1805.07858
+
+> 19. (Ghaeini et al., 2018) Dependent Gated Reading for Cloze-Style Question Answering
+<br/>http://arxiv.org/abs/1805.10528
 
 ## Contact
 For any problems, please leave a message in the `Github Issues`.
