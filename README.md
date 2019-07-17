@@ -3,8 +3,7 @@
 **Note that, this repository will be updated irregularly.**
 
 ## Statement
-**If you find this repository helpful, please press the star button. Moreover, if you would like to use or repost the content in this repository, please indicate the orignal author and source link.**
-
+**If you find this repository helpful, please press the STAR button. Moreover, if you would like to use or repost the content in this repository, please indicate the orignal author and source link.**
 
 ## Introduction
 This repository contains an empirical comparison on current neural networks on Cloze-style Reading Comprehension. The content only represent PERSONAL views on these works. Any discussions will be welcome. (Please go to `Issue` Tab)
